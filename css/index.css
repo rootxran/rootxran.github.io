@@ -112,6 +112,8 @@ header{
 .mobile-nav{
     position: fixed;
     bottom: 0;
+    left: 0;
+    right: 0;
     align-content: center;
     width: 450px;
     width: 100%;
@@ -147,7 +149,8 @@ header{
     position: relative;
     display: block;
     line-height: 75px;
-    font-size: 1.5em;
+    /* font-size: 1.5em; */
+    font-size: 2.0em;
     text-align: center;
     transition: 0.5s;
     color: #222327;
@@ -159,7 +162,8 @@ header{
     position: absolute;
     color: #222327;
     font-weight: 400;
-    font-size: 0.75em;
+    /* font-size: 0.75em; */
+    font-size: 1.10em;
     letter-spacing: 0.05em;
     transition: 0.5s;
     opacity: 0;
@@ -203,21 +207,27 @@ header{
 }
 .mobile-nav ul li:nth-child(1).active ~ .indicator{
     transform: translateX(calc(70px * 0));
+    filter: hue-rotate(360deg);
 }
 .mobile-nav ul li:nth-child(2).active ~ .indicator{
     transform: translateX(calc(70px * 1));
+    filter: hue-rotate(120deg);
 }
 .mobile-nav ul li:nth-child(3).active ~ .indicator{
     transform: translateX(calc(70px * 2));
+    filter: hue-rotate(180deg);
 }
 .mobile-nav ul li:nth-child(4).active ~ .indicator{
     transform: translateX(calc(70px * 3));
+    filter: hue-rotate(240deg);
 }
 .mobile-nav ul li:nth-child(5).active ~ .indicator{
     transform: translateX(calc(70px * 4));
+    filter: hue-rotate(300deg);
 }
 .mobile-nav ul li:nth-child(6).active ~ .indicator{
     transform: translateX(calc(70px * 5));
+    filter: hue-rotate(0deg);
 }
 
 /* Home Section */
@@ -467,7 +477,7 @@ header{
     position: absolute;
     top: 0;
     right: 0;
-    font-size: 14px;
+    font-size: 15px;
     font-weight: normal;
 }
 .candidates .partial .progressbar{
@@ -502,9 +512,13 @@ header{
     grid-template-columns: repeat(2,1fr);
     gap: 1.5rem;
 }
+.skillset-content .skillsetbars h3{
+    margin-left: 7rem;
+}
 .languages h3{
     font-size: 0.938rem;
     text-align: justify;
+    margin: 4rem;
 }
 @keyframes animationProgress{
     from{
@@ -893,6 +907,10 @@ input{
 .contact-form input{
     display: block;
 }
+div .space{
+    display: block;
+    color: #090a1a;
+}
 /* Contact form */
 .contact-form{
     max-width: 800px;
@@ -976,6 +994,18 @@ input{
 /* Making Responsive */
 
 @media (max-width:990px){
+    .about-text p {
+        font-size: 0.68rem;
+    }
+    .name {
+        font-size: 12px;
+    }
+    .candidates .partial .info .percentage-num {
+        font-size: 19px;
+    }
+    .home-text h3 {
+        font-size: 1.7rem;
+    }
     .home-text p {
         font-size: 1.538rem;
     }

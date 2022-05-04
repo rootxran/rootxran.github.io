@@ -912,6 +912,9 @@ div .space{
     color: #090a1a;
 }
 /* Contact form */
+h2.heading.contactheading{
+    margin-top: 300px;
+}
 .contact-form{
     max-width: 800px;
     margin: auto;

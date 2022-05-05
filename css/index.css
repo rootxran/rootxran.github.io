@@ -513,7 +513,7 @@ header{
     gap: 1.5rem;
 }
 .skillset-content .skillsetbars h3{
-    margin-left: 7rem;
+    /* margin-left: 7rem; */
 }
 .languages h3{
     font-size: 0.938rem;
@@ -527,9 +527,11 @@ header{
     
 }
 .language h3{
-    margin-left: 35%;
+    text-align: center;
+    /* margin-left: 8rem; */
     letter-spacing: 2px;
     padding-bottom: 10px;
+    font-size: 20px;
 }
 
 .mh-skills .mh-professional-skill{
@@ -556,6 +558,13 @@ header{
     display: inline-block;
     width: 100px;
     height: 100px;
+}
+.mh-professional-skill li{
+    padding-left: 0px;
+}
+div .pr-skill-name {
+    margin-left: 0px;
+    font-size: 1rem;
 }
 .mh-progress path:nth-child(1){
     stroke:rgba(0,0,0,0.7);
@@ -649,6 +658,7 @@ header{
 .certificatelink h3{
     font-size: 17px;
     margin: 0;
+    color: var(--body-color);
 }
 .certificatelink span{
     display: inline-block;
@@ -997,6 +1007,18 @@ h2.heading.contactheading{
 /* Making Responsive */
 
 @media (max-width:990px){
+    .mh-professional-skills li{
+        padding-left: 100px;
+    }
+    /* li {
+        padding-left: 100px;
+    } */
+    .candidates .partial .info .percentage-num {
+        font-size: 1.1rem;
+    }
+    .skillset-content {
+        grid-template-columns: repeat(1,1fr);
+    }
     .about-text p {
         font-size: 0.68rem;
     }
@@ -1013,7 +1035,7 @@ h2.heading.contactheading{
         font-size: 1.538rem;
     }
     .heading {
-        font-size: 4rem;
+        font-size: 5.5rem;
     }
     .navbar{
         display: none;
@@ -1029,7 +1051,8 @@ h2.heading.contactheading{
         bottom: 6rem;
     }
     div .pr-skill-name {
-        margin-left: 36px;
+        margin-left: -59px;
+        font-size: 1.8rem;
     }
     .container{
         margin: 0 auto;

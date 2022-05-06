@@ -317,6 +317,7 @@ header{
     height: 100%;
     background: var(--body-color);
     border-left: 2px solid #face30;
+    /* border-left: 2px solid var(--body-color); */
     animation: typing 3s steps(10) infinite;
 }
 @keyframes typing {
@@ -392,7 +393,7 @@ header{
 }
 /* About Me Heading */
 .about{
-    padding-top: 20px;
+    padding-top: 10px;
 }
 .heading{
     font-size: 5rem;
@@ -512,9 +513,9 @@ header{
     grid-template-columns: repeat(2,1fr);
     gap: 1.5rem;
 }
-.skillset-content .skillsetbars h3{
+/* .skillset-content .skillsetbars h3{
     /* margin-left: 7rem; */
-}
+/* } */ */
 .languages h3{
     font-size: 0.938rem;
     text-align: justify;
@@ -646,7 +647,7 @@ div .pr-skill-name {
     display: inline;
     float: right;
     background-color: var(--body-color);
-    radius: 50% ;
+    border-radius: 50% ;
     width: 120px;
     border-radius: 15px;
     padding-left: 12px;
@@ -726,7 +727,7 @@ div .pr-skill-name {
 }
 .workhistory div h5{
     background-color: var(--body-color);
-    radius: 50% ;
+    border-radius: 50% ;
     width: 190px;
     border-radius: 20px;
     padding-left: 10px;
@@ -1007,8 +1008,14 @@ h2.heading.contactheading{
 /* Making Responsive */
 
 @media (max-width:990px){
+    .social .bx {
+        font-size: 2.0rem;
+    }
     .mh-professional-skills li{
         padding-left: 100px;
+    }
+    .home{
+        padding-bottom: 0px;
     }
     /* li {
         padding-left: 100px;

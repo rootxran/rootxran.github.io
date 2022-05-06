@@ -167,3 +167,8 @@ h3{
     background: var(--container-color);
 
 }
+@media (max-width:900px) {
+  .container .heading h3{
+    font-size: 25px;
+  }
+}

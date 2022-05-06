@@ -171,4 +171,8 @@ h3{
   .container .heading h3{
     font-size: 25px;
   }
+  p.card-text.ba-card-text{
+    margin-bottom: 0px;
+    margin-top: 0px;
+  }
 }

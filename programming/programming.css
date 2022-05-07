@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;1,600&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    scroll-padding-top: 2rem;
+}
+body {
+    background-color: black;
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
+}
+
+html {
+  height: -webkit-fill-available;
+}
+html {
+  height: -webkit-fill-available;
+}
+html, body{
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
+main {
+  display: flex;
+  flex-wrap: nowrap;
+  height: 100vh;
+  height: -webkit-fill-available;
+  max-height: 100vh;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+.accordion{
+  width: 100%;
+  /* padding: 100px; */
+}
+@media (max-width:990px) {
+  .accordion{
+    /* width: 800px; */
+    padding: 0px;
+  }
+}
+.accordion .contentBx{
+  position: relative;
+  margin: 10px 20px;
+}
+.accordion .contentBx .label{
+  position: relative;
+  padding: 10px;
+  background: rgb(124, 74, 152);
+  color: #fff;
+  cursor: pointer;
+}
+.accordion .contentBx .label::before{
+  content: '+';
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  font-size: 1.5rem;
+}
+.accordion .contentBx.active .label::before{
+  content: '-';
+}
+.accordion .contentBx .content{
+  position: relative;
+  background: #fff;
+  height: 0px;
+  overflow: hidden;
+  transition: 0.5s;
+  overflow-y: auto; 
+}
+.accordion .contentBx.active .content{
+  /* height: 750px; */
+  height: auto;
+  /* transform: scaleY(0); */
+  padding: 10px;
+}
+.accordion .contentBx .content .code{
+  position: relative;
+  /* background: #fff; */
+  /* height: 100%; */
+  overflow: hidden;
+  transition: 0.5s;
+  overflow-y: auto;
+  /* height: 500px; */
+}
+
+/* Inner accordion */
+
+
+.inneraccordion .innercontentbx{
+  position: relative;
+  margin: 10px 20px;
+}
+.inneraccordion .innercontentbx .innerlabel{
+  position: relative;
+  padding: 10px;
+  background: rgb(124, 74, 152);
+  color: #fff;
+  cursor: pointer;
+}
+.inneraccordion .innercontentbx .innerlabel::before{
+  content: '+';
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  font-size: 1.5rem;
+}
+.inneraccordion .innercontentbx.active .innerlabel::before{
+  content: '-';
+}
+.inneraccordion .innercontentbx .innercontent{
+  position: relative;
+  background: #fff;
+  height: 0px;
+  overflow: hidden;
+  transition: 0.5s;
+  overflow-y: auto; 
+}
+.inneraccordion .innercontentbx.active .innercontent{
+  /* height: 750px; */
+  height: auto;
+  /* transform: scaleY(0); */
+  padding: 10px;
+}
+.inneraccordion .innercontentbx .innercontent .code{
+  position: relative;
+  /* background: #fff; */
+  /* height: 100%; */
+  overflow: hidden;
+  transition: 0.5s;
+  overflow-y: auto;
+  /* height: 500px; */
+}

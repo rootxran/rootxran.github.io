@@ -105,8 +105,6 @@
         item.addEventListener('click', activeLink));
       </script>
     </header>
-    <!--Link to Js File-->
-    <script src="js\index.js"></script>
     <!--Home-->
     <section class="home" container="home" id="home">
       <div class="home-content">
@@ -387,7 +385,7 @@
       <h2 class="heading contactheading">Contact</h2>
       <!--Contact Form-->
       <form action="" class="contact-form" id="contact-form" style="height: 350px;">
-        <input type="text" placeholder="Your Name" class="name" required>
+        <input type="text" placeholder="Your Name" class="fromname" required>
         <input type="email" name="" id="" placeholder="Email address..." class="email" required>
         <textarea name="" id="" cols="30" row="10" placeholder="Write message here..." class="message" required></textarea>
         <input type="submit" value="Send" class="send-btn">
@@ -411,11 +409,18 @@
       <p>&#169; RootxRAN</p>
     </section>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-    <script type="text/javascript">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <!-- <script type="text/javascript">
       (function(){
         emailjs.init("uV83-aeDs4PV_-k7x");
       })();
+    </script> -->
+    <script type="text/javascript">
+      (function(){
+      emailjs.init('uV83-aeDs4PV_-k7x');
+      })();
     </script>  
-    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <!--Link to Js File-->
+    <script src="js\index.js"></script>
   </body>
 </html>

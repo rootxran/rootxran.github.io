@@ -5,7 +5,7 @@ menu.onclick = () => {
 
 // Email JS
 function validate() {
-  let name = document.querySelector(".name");
+  let name = document.querySelector(".fromname");
   let email = document.querySelector(".email");
   let msg = document.querySelector(".message");
   let sendBtn = document.querySelector(".send-btn");
@@ -16,11 +16,20 @@ function validate() {
       emptyerror();
     } else {
       sendmail(name.value, email.value, msg.value);
-      success;
+      success();
     }
   });
 }
 validate();
+
+function sendmail(name, email, msg) {
+  emailjs.send("service_7h1hgek","template_4ng4wih",{
+  from_name: email,
+  to_name: name,
+  message: msg,
+  });
+}
+
 
 function emptyerror() {
   swal({
@@ -32,7 +41,7 @@ function emptyerror() {
 function success() {
   swal({
     title: "Email sent successfully",
-    text: "We try to reply in 24 hours",
+    text: "I will try to reply in 24 hours",
     icon: "success",
   });
 }

@@ -1,422 +1,410 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
-    <meta name="viewport" />
-    <!--Link to css-->
-    <link rel="stylesheet" href="css\index.css" />
-    <!--Link to boxicons-->
-    <link
-      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-    <!--Link to ionicons-->
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <!--Jquery CDN Link -->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
-      charset="utf-8"
-    ></script>
-    <!--Easy Pie Chart Link -->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/easy-pie-chart/2.1.6/jquery.easypiechart.min.js"
-      charset="utf-8"
-    ></script>
-    <title>rootxRAN</title>
-  </head>
-  <body>
-    <!-- Scroll to Top -->
-    <a href="#home" class="scroll-top">
-      <i class='bx bx-up-arrow-alt'></i>
-    </a>
-    <!--header-->
-    <header>
-      <!--nav-->
-      <div class="nav container">
-        <!-- name-->
-        <a href="#" class="name"> RootxRAN </a>
-        <ul class="navbar">
-          <li><a href="#home" class="nav-item">Home</a></li>
-          <li><a href="#about" class="nav-item">About</a></li>
-          <li><a href="#skillset" class="nav-item">Skillset</a></li>
-          <li><a href="#education" class="nav-item">Education</a></li>
-          <li><a href="#blogs" class="nav-item">Blogs</a></li>
-          <li><a href="#contact" class="nav-item">Contact</a></li>
-        </ul>
-        <!--Side Menu Icon-->
-        <div class="menu-icon">
-          <div class="line1"></div>
-          <div class="line2"></div>
-          <div class="line3"></div>
-        </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
+  <meta name="viewport" />
+  <meta name="description"
+    content="Hi there, I am Rao Ali (@rootxran) and I'm a Bug Hunter, Web Developer, Security Professional, Bash Developer and a hacker with ethical mindset.">
+  <!--Link to css-->
+  <link rel="stylesheet" href="css\index.css" />
+  <!--Link to boxicons-->
+  <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
+  <!--Link to ionicons-->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <!--Jquery CDN Link -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" charset="utf-8"></script>
+  <!--Easy Pie Chart Link -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/easy-pie-chart/2.1.6/jquery.easypiechart.min.js"
+    charset="utf-8"></script>
+  <title>rootxRAN</title>
+</head>
+
+<body>
+  <!-- Scroll to Top -->
+  <a href="#home" class="scroll-top">
+    <i class='bx bx-up-arrow-alt'></i>
+  </a>
+  <!--header-->
+  <header>
+    <!--nav-->
+    <div class="nav container">
+      <!-- name-->
+      <a href="#" class="name"> RootxRAN </a>
+      <ul class="navbar">
+        <li><a href="#home" class="nav-item">Home</a></li>
+        <li><a href="#about" class="nav-item">About</a></li>
+        <li><a href="#skillset" class="nav-item">Skillset</a></li>
+        <li><a href="#education" class="nav-item">Education</a></li>
+        <li><a href="#blogs" class="nav-item">Blogs</a></li>
+        <li><a href="#contact" class="nav-item">Contact</a></li>
+      </ul>
+      <!--Side Menu Icon-->
+      <div class="menu-icon">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
       </div>
-      <div class="mobile-nav">
-        <ul>
-          <li class="list active">
-            <a href="#home">
-              <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
-              <span class="text">Home</span>
-            </a>
-          </li>
-          <li class="list">
-            <a href="#about">
-              <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
-              <span class="text">About</span>
-            </a>
-          </li>
-          <li class="list">
-            <a href="#skillset">
-              <span class="icon"><ion-icon name="pie-chart-outline"></ion-icon></span>
-              <span class="text">Skillset</span>
-            </a>
-          </li>
-          <li class="list">
-            <a href="#education">
-              <span class="icon"><i class='bx bxs-graduation'></i></span>
-              <span class="text">Education</span>
-            </a>
-          </li>
-          <li class="list">
-            <a href="#blogs">
-              <span class="icon"><ion-icon name="albums-outline"></ion-icon></span>
-              <span class="text">Blogs</span>
-            </a>
-          </li>
-          <li class="list">
-            <a href="#contact">
-              <span class="icon"><ion-icon name="chatbox-ellipses-outline"></ion-icon></span>
-              <span class="text">Contact</span>
-            </a>
-          </li>
-          <div class="indicator"></div>
-        </ul>
-      </div>
-      <script>
-        const list = document.querySelectorAll('.list');
-        function activeLink(){
-          list.forEach((item) =>
-          item.classList.remove('active'));
-          this.classList.add('active');
-        }
+    </div>
+    <div class="mobile-nav">
+      <ul>
+        <li class="list active">
+          <a href="#home">
+            <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
+            <span class="text">Home</span>
+          </a>
+        </li>
+        <li class="list">
+          <a href="#about">
+            <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
+            <span class="text">About</span>
+          </a>
+        </li>
+        <li class="list">
+          <a href="#skillset">
+            <span class="icon"><ion-icon name="pie-chart-outline"></ion-icon></span>
+            <span class="text">Skillset</span>
+          </a>
+        </li>
+        <li class="list">
+          <a href="#education">
+            <span class="icon"><i class='bx bxs-graduation'></i></span>
+            <span class="text">Education</span>
+          </a>
+        </li>
+        <li class="list">
+          <a href="#blogs">
+            <span class="icon"><ion-icon name="albums-outline"></ion-icon></span>
+            <span class="text">Blogs</span>
+          </a>
+        </li>
+        <li class="list">
+          <a href="#contact">
+            <span class="icon"><ion-icon name="chatbox-ellipses-outline"></ion-icon></span>
+            <span class="text">Contact</span>
+          </a>
+        </li>
+        <div class="indicator"></div>
+      </ul>
+    </div>
+    <script>
+      const list = document.querySelectorAll('.list');
+      function activeLink() {
         list.forEach((item) =>
+          item.classList.remove('active'));
+        this.classList.add('active');
+      }
+      list.forEach((item) =>
         item.addEventListener('click', activeLink));
-      </script>
-    </header>
-    <!--Home-->
-    <section class="home" container="home" id="home">
-      <div class="home-content">
-        <div class="home-img">
-          <img
-            src="img\profilephotobgremove.png"
-            class="home-img-bg"
-            alt="profilephoto"
-          />
+    </script>
+  </header>
+  <!--Home-->
+  <section class="home" container="home" id="home">
+    <div class="home-content">
+      <div class="home-img">
+        <img src="img\profilephotobgremove.png" class="home-img-bg" alt="profilephoto" />
+      </div>
+      <div class="home-text">
+        <h3>Root x RAN</h3>
+        <h2>I'm <span class="color">Rao Ali</span></h2>
+        <p>
+          I'm Cyber Security Enthusiast and a Hacker with an Ethical mindset.
+        </p>
+        <div class="wrapper">
+          <!-- <div class="text">I'm a</div> -->
+          <ul class="dynamic-txts">
+            <li><span>Programmer</span></li>
+            <li><span>Graphics Designer</span></li>
+            <li><span>Web Developer</span></li>
+            <li><span>Freelancer<span></li>
+          </ul>
+          <!-- <div class="static-txt2">&lt;&sol;bug&gt;</div>-->
         </div>
-        <div class="home-text">
-          <h3>Root x RAN</h3>
-          <h2>I'm <span class="color">Rao Ali</span></h2>
-          <p>
-            I'm Cyber Security Enthusiast and a Hacker with an Ethical mindset.
-          </p>
-          <div class="wrapper">
-            <!-- <div class="text">I'm a</div> -->
-            <ul class="dynamic-txts">
-              <li><span>Programmer</span></li>
-              <li><span>Graphics Designer</span></li>
-              <li><span>Web Developer</span></li>
-              <li><span>Freelancer<span></li>
-            </ul>
-            <!-- <div class="static-txt2">&lt;&sol;bug&gt;</div>-->
+
+        <!--Socials-->
+        <div class="social">
+          <a href="https://github.com/rootxran" target="_blank"><i class="bx bxl-github"></i></a>
+          <a href="https://twitter.com/rootxran" target="_blank"><i class="bx bxl-twitter"></i></a>
+          <a href="https://www.linkedin.com/in/rao-ali-nawaz-907b6b239/" target="_blank"><i
+              class="bx bxl-linkedin"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--About Section-->
+  <section class="about container" id="about">
+    <!--Heading-->
+    <h2 class="heading">ABOUT ME</h2>
+    <!--About Content-->
+    <div class="about-content">
+      <div class="about-data">
+        <span>About Me</span>
+        <h2 class="security-researcher">
+          Security Researcher,</h2>
+        <h3>
+          Web Developer</h3><br />
+        <h2 class="cybersecurity-student">
+          & Cyber Security Student
+        </h2>
+        <a href="cv\raocv.pdf" target="_blank" class="btn">
+          Download CV
+          <i class="bx bx-download"></i>
+        </a>
+      </div>
+      <div class="about-text">
+        <p>
+          I'm having experience in Web-app security, Mobile app security, API
+          security, Vulnerability Assessment & Penetration Testing. I am
+          experienced with tools like burpsuite, acunetix, Nmap, Pentest
+          tools, and of course with Kali Linux & some GitHub open source tools
+          like Amass, Aquatone, etc many more for finding the vulnerabilities
+          in the web application and mobile application. I have frequently
+          found account takeover, injections, privilege escalation, XSS, etc
+          vulnerabilities on many programs. Also I have experience in Web
+          development and graphics designing I have made graphics content as
+          my side hobby.
+        </p>
+      </div>
+    </div>
+  </section>
+  <!--Skillset Section-->
+  <section class="skillset container" id="skillset">
+    <!--Heading-->
+    <h2 class="heading">SKILLSET</h2>
+    <!--Skillset Content-->
+    <div class="skillset-content">
+      <!-- <div class="skillset-bars"> -->
+      <div class="language skillsetbars">
+        <h3>TECHNICAL SKILLS</h3>
+        <div class="each-skills">
+          <!--C++ Programming-->
+          <div class="candidates">
+            <div class="partial">
+              <div class="info">
+                <div class="name">C++</div>
+                <div class="percentage-num">80%</div>
+              </div>
+              <div class="progressbar">
+                <div class="percentagem" style="width: 80%"></div>
+              </div>
+            </div>
           </div>
-          
-          <!--Socials-->
-          <div class="social">
-            <a href="https://github.com/rootxran" target="_blank"
-              ><i class="bx bxl-github"></i
-            ></a>
-            <a href="https://twitter.com/rootxran" target="_blank"><i class="bx bxl-twitter"></i></a>
-            <a href="https://www.linkedin.com/in/rao-ali-nawaz-907b6b239/" target="_blank"><i class="bx bxl-linkedin"></i></a>
+          <!--Html Programming-->
+          <div class="candidates">
+            <div class="partial">
+              <div class="info">
+                <div class="name">HTML</div>
+                <div class="percentage-num">75%</div>
+              </div>
+              <div class="progressbar">
+                <div class="percentagem" style="width: 75%"></div>
+              </div>
+            </div>
+          </div>
+          <!--CSS Programming-->
+          <div class="candidates">
+            <div class="partial">
+              <div class="info">
+                <div class="name">CSS</div>
+                <div class="percentage-num">70%</div>
+              </div>
+              <div class="progressbar">
+                <div class="percentagem" style="width: 70%"></div>
+              </div>
+            </div>
+          </div>
+          <!--JavaScript Programming-->
+          <div class="candidates">
+            <div class="partial">
+              <div class="info">
+                <div class="name">JavaScript</div>
+                <div class="percentage-num">65%</div>
+              </div>
+              <div class="progressbar">
+                <div class="percentagem" style="width: 65%"></div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </section>
-    <!--About Section-->
-    <section class="about container" id="about">
-      <!--Heading-->
-      <h2 class="heading">ABOUT ME</h2>
-      <!--About Content-->
-      <div class="about-content">
-        <div class="about-data">
-          <span>About Me</span>
-          <h2 class="security-researcher">
-            Security Researcher,</h2>
-              <h3>
-            Web Developer</h3><br />
-            <h2 class="cybersecurity-student">
-            & Cyber Security Student
-          </h2>
-          <a href="cv\raocv.pdf" target="_blank" class="btn">
-            Download CV
-            <i class="bx bx-download"></i>
+      <div class="language">
+        <h3>LANGUAGES</h3>
+        <div class="mh-professional-skills">
+          <ul>
+            <li>
+              <div class="mh-progress mh-progress-circle" data-progress="100"></div>
+              <div class="pr-skill-name">Urdu</div>
+            </li>
+            <li>
+              <div class="mh-progress mh-progress-circle" data-progress="80"></div>
+              <div class="pr-skill-name">English</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <script src="js\circle-progress.js"></script>
+    </div>
+  </section>
+  <!--Education Section-->
+  <section class="education container" id="education">
+    <!--Education Heading-->
+    <h2 class="heading">EDUCATION</h2>
+    <!--Education Content-->
+    <div class="education-content">
+      <!--Certifications-->
+      <div class="certifications">
+        <h3>CERTIFICATIONS</h3>
+        <div class="each-certification">
+          <h2>C for Everyone:</h2>
+          <h3>Programming Fundamentals</h3>
+          <h4>COURSERA</h4>
+          <h5>04-Feb-2022</h5>
+          <a href="certifications\programmingfundamentals.pdf" target="_blank" class="certificatelink">
+            <h3>Certificate</h3>
           </a>
         </div>
-        <div class="about-text">
-          <p>
-            I'm having experience in Web-app security, Mobile app security, API
-            security, Vulnerability Assessment & Penetration Testing. I am
-            experienced with tools like burpsuite, acunetix, Nmap, Pentest
-            tools, and of course with Kali Linux & some GitHub open source tools
-            like Amass, Aquatone, etc many more for finding the vulnerabilities
-            in the web application and mobile application. I have frequently
-            found account takeover, injections, privilege escalation, XSS, etc
-            vulnerabilities on many programs. Also I have experience in Web
-            development and graphics designing I have made graphics content as
-            my side hobby.
-          </p>
+        <div class="each-certification">
+          <h2>C for Everyone:</h2>
+          <h3>Structured Programming</h3>
+          <h4>COURSERA</h4>
+          <h5>23-Mar-2022</h5>
+          <a href="certifications\structuredprogramming.pdf" target="_blank" class="certificatelink">
+            <h3>Certificate</h3>
+          </a>
+        </div>
+        <div class="each-certification">
+          <h2>Google Cloud:</h2>
+          <h3>Security Challenge</h3>
+          <h4>Google Cloud</h4>
+          <h5>23-Mar-2022</h5>
+          <a href="https://www.qwiklabs.com/public_profiles/f99ff047-6b30-4438-9830-3f357c3bdc20" target="_blank"
+            class="certificatelink">
+            <h3>Profile</h3>
+          </a>
         </div>
       </div>
-    </section>
-    <!--Skillset Section-->
-    <section class="skillset container" id="skillset">
-      <!--Heading-->
-      <h2 class="heading">SKILLSET</h2>
-      <!--Skillset Content-->
-      <div class="skillset-content">
-        <!-- <div class="skillset-bars"> -->
-        <div class="language skillsetbars">
-          <h3>TECHNICAL SKILLS</h3>
-          <div class="each-skills">
-            <!--C++ Programming-->
-            <div class="candidates">
-              <div class="partial">
-                <div class="info">
-                  <div class="name">C++</div>
-                  <div class="percentage-num">80%</div>
-                </div>
-                <div class="progressbar">
-                  <div class="percentagem" style="width: 80%"></div>
-                </div>
-              </div>
-            </div>
-            <!--Html Programming-->
-            <div class="candidates">
-              <div class="partial">
-                <div class="info">
-                  <div class="name">HTML</div>
-                  <div class="percentage-num">75%</div>
-                </div>
-                <div class="progressbar">
-                  <div class="percentagem" style="width: 75%"></div>
-                </div>
-              </div>
-            </div>
-            <!--CSS Programming-->
-            <div class="candidates">
-              <div class="partial">
-                <div class="info">
-                  <div class="name">CSS</div>
-                  <div class="percentage-num">70%</div>
-                </div>
-                <div class="progressbar">
-                  <div class="percentagem" style="width: 70%"></div>
-                </div>
-              </div>
-            </div>
-            <!--JavaScript Programming-->
-            <div class="candidates">
-              <div class="partial">
-                <div class="info">
-                  <div class="name">JavaScript</div>
-                  <div class="percentage-num">65%</div>
-                </div>
-                <div class="progressbar">
-                  <div class="percentagem" style="width: 65%"></div>
-                </div>
-              </div>
-            </div>
-          </div>
+      <!--Work History-->
+      <div class="workhistory">
+        <h3>WORK HISTORY</h3>
+        <div class="each-workhistory">
+          <h2>Security Researcher</h2>
+          <h3>Hackerone</h3>
+          <h5>31-Jan-2021 - Present</h5>
         </div>
-        <div class="language">
-          <h3>LANGUAGES</h3>
-          <div class="mh-professional-skills">
-            <ul>
-              <li>
-                <div
-                  class="mh-progress mh-progress-circle"
-                  data-progress="100"
-                ></div>
-                <div class="pr-skill-name">Urdu</div>
-              </li>
-              <li>
-                <div
-                  class="mh-progress mh-progress-circle"
-                  data-progress="80"
-                ></div>
-                <div class="pr-skill-name">English</div>
-              </li>
-            </ul>
-          </div>
+        <div class="each-workhistory">
+          <h2>Freelancer</h2>
+          <h3>Fiverr, Upwork</h3>
+          <h5>31-Nov-2019 - JAN 2022</h5>
         </div>
-        <script src="js\circle-progress.js"></script>
-      </div>
-    </section>
-    <!--Education Section-->
-    <section class="education container" id="education">
-      <!--Education Heading-->
-      <h2 class="heading">EDUCATION</h2>
-      <!--Education Content-->
-      <div class="education-content">
-        <!--Certifications-->
-        <div class="certifications">
-          <h3>CERTIFICATIONS</h3>
-          <div class="each-certification">
-            <h2>C for Everyone:</h2>
-            <h3>Programming Fundamentals</h3>
-            <h4>COURSERA</h4>
-            <h5>04-Feb-2022</h5>
-            <a href="certifications\programmingfundamentals.pdf" target="_blank" class="certificatelink"
-              ><h3>Certificate</h3></a
-            >
-          </div>
-          <div class="each-certification">
-            <h2>C for Everyone:</h2>
-            <h3>Structured Programming</h3>
-            <h4>COURSERA</h4>
-            <h5>23-Mar-2022</h5>
-            <a href="certifications\structuredprogramming.pdf" target="_blank" class="certificatelink"
-              ><h3>Certificate</h3></a
-            >
-          </div>
-          <div class="each-certification">
-            <h2>Google Cloud:</h2>
-            <h3>Security Challenge</h3>
-            <h4>Google Cloud</h4>
-            <h5>23-Mar-2022</h5>
-            <a href="https://www.qwiklabs.com/public_profiles/f99ff047-6b30-4438-9830-3f357c3bdc20" target="_blank" class="certificatelink"
-              ><h3>Profile</h3>
-            </a>
-          </div>
-        </div>
-        <!--Work History-->
-        <div class="workhistory">
-          <h3>WORK HISTORY</h3>
-          <div class="each-workhistory">
-            <h2>Security Researcher</h2>
-            <h3>Hackerone</h3>
-            <h5>31-Jan-2021 - Present</h5>
-          </div>
-          <div class="each-workhistory">
-            <h2>Freelancer</h2>
-            <h3>Fiverr, Upwork</h3>
-            <h5>31-Nov-2019 - JAN 2022</h5>
-          </div>
-          <div class="each-workhistory">
-            <h2>CTF Player</h2>
-            <h3>Hackthebox</h3>
-            <h5>31-Nov-2021 - Present</h5>
-          </div>
+        <div class="each-workhistory">
+          <h2>CTF Player</h2>
+          <h3>Hackthebox</h3>
+          <h5>31-Nov-2021 - Present</h5>
         </div>
       </div>
-    </section>
-    <!--Blogs Section-->
-    <section class="blogs container" id="blogs">
-      <h2 class="heading">BLOGS</h2>
-      <!--Blogs content-->
-      <div class="blogs-content">
-        <div class="blog-card">
-          <input type="radio" name="select" id="tap-1">
-          <input type="radio" name="select" id="tap-2">
-          <input type="radio" name="select" id="tap-3">
-          <div class="sliders">
-            <label for="tap-1" class="tap tap-1"></label>
-            <label for="tap-2" class="tap tap-2"></label>
-            <label for="tap-3" class="tap tap-3"></label>
-          </div>
-          <div class="inner-part">
-            <label for="" class="img">
-              <img class="img-1" src="img\ba.jpg" alt="blog1">
-            </label>
-            <div class="content content-1">
-              <!-- <span>05-2022</span> -->
-              <div class="title">Documentation</div>
-              <div class="text">In this documentation I will solve problems and give solutions.
-                Also work on giving resources to learn something.
-              </div>
-              <a href="documentation\documentation.html" target="_blank">
+    </div>
+  </section>
+  <!--Blogs Section-->
+  <section class="blogs container" id="blogs">
+    <h2 class="heading">BLOGS</h2>
+    <!--Blogs content-->
+    <div class="blogs-content">
+      <div class="blog-card">
+        <input type="radio" name="select" id="tap-1">
+        <input type="radio" name="select" id="tap-2">
+        <input type="radio" name="select" id="tap-3">
+        <div class="sliders">
+          <label for="tap-1" class="tap tap-1"></label>
+          <label for="tap-2" class="tap tap-2"></label>
+          <label for="tap-3" class="tap tap-3"></label>
+        </div>
+        <div class="inner-part">
+          <label for="" class="img">
+            <img class="img-1" src="img\ba.jpg" alt="blog1">
+          </label>
+          <div class="content content-1">
+            <!-- <span>05-2022</span> -->
+            <div class="title">Documentation</div>
+            <div class="text">In this documentation I will solve problems and give solutions.
+              Also work on giving resources to learn something.
+            </div>
+            <a href="documentation\documentation.html" target="_blank">
               <button>Read More</button></a>
-            </div>
           </div>
-          <div class="inner-part">
-            <label for="" class="img">
-              <img class="img-2" src="img\programming.jpg" alt="blog2">
-            </label>
-            <div class="content content-2">
-              <!-- <span>05-2022</span> -->
-              <div class="title">My Programming Journey</div>
-              <div class="text">In this documentation I will solve problems and give solutions to problems
-              </div>
-              <a href="programming\programmingsolutions.html" target="_blank">
-              <button>Read More</button></a>
+        </div>
+        <div class="inner-part">
+          <label for="" class="img">
+            <img class="img-2" src="img\programming.jpg" alt="blog2">
+          </label>
+          <div class="content content-2">
+            <!-- <span>05-2022</span> -->
+            <div class="title">My Programming Journey</div>
+            <div class="text">In this documentation I will solve problems and give solutions to problems
             </div>
+            <a href="programming\programmingsolutions.html" target="_blank">
+              <button>Read More</button></a>
           </div>
-          <div class="inner-part">
-            <label for="" class="img">
-              <img class="img-3" src="img\quotes1.jpg" alt="blog3">
-            </label>
-            <div class="content content-3">
-              <!-- <span>05-2022</span> -->
-              <div class="title">My Quotes</div>
-              <div class="text">In this blog I will share my quotes.
-              </div>
-              <a href="documentation\documentation.html" target="_blank">
-              <button>Read More</button></a>
+        </div>
+        <div class="inner-part">
+          <label for="" class="img">
+            <img class="img-3" src="img\quotes1.jpg" alt="blog3">
+          </label>
+          <div class="content content-3">
+            <!-- <span>05-2022</span> -->
+            <div class="title">My Quotes</div>
+            <div class="text">In this blog I will share my quotes.
             </div>
+            <a href="documentation\documentation.html" target="_blank">
+              <button>Read More</button></a>
           </div>
         </div>
       </div>
-    </section>
-    <br>
-    <!--Contact Me form-->
-    <section class="contact container" id="contact">
-      <!--Contact Heading-->
-      <h2 class="heading contactheading">Contact</h2>
-      <!--Contact Form-->
-      <form action="" class="contact-form" id="contact-form" style="height: 350px;">
-        <input type="text" placeholder="Your Name" class="fromname" required>
-        <input type="email" name="" id="" placeholder="Email address..." class="email" required>
-        <textarea name="" id="" cols="30" row="10" placeholder="Write message here..." class="message" required></textarea>
-        <input type="submit" value="Send" class="send-btn">
-      </form>
-    </section>
-    <!-- Footer Section-->
-    <section class="footer container" id="footer">
-      <div class="social">
-       <a href="mailto:raoalinawaz-cys@gmail.com" <i class='bx bx-envelope'></i></a>
-        <a href="https://github.com/raoalinawaz-cys" target="_blank"><i class="bx bxl-github"></i></a>
-        <a href="https://twitter.com/rootxran" target="_blank"><i class="bx bxl-twitter"></i></a>
-        <a href="https://www.linkedin.com/in/rao-ali-nawaz-907b6b239/" target="_blank"><i class="bx bxl-linkedin"></i></a>
-      </div>
-      <!--Footer Links-->
-      <div class="footer-links">
-        <a href="#">Privacy Policy</a>
-        <a href="#">Terms of Use</a>
-        <a href="#">Disclaimer</a>
-      </div>
-      <!--Copyright-->
-      <p>&#169; RootxRAN</p>
-    </section>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    </div>
+  </section>
+  <br>
+  <!--Contact Me form-->
+  <section class="contact container" id="contact">
+    <!--Contact Heading-->
+    <h2 class="heading contactheading">Contact</h2>
+    <!--Contact Form-->
+    <form action="" class="contact-form" id="contact-form" style="height: 350px;">
+      <input type="text" placeholder="Your Name" class="fromname" required>
+      <input type="email" name="" id="" placeholder="Email address..." class="email" required>
+      <textarea name="" id="" cols="30" row="10" placeholder="Write message here..." class="message"
+        required></textarea>
+      <input type="submit" value="Send" class="send-btn">
+    </form>
+  </section>
+  <!-- Footer Section-->
+  <section class="footer container" id="footer">
+    <div class="social">
+      <a href="mailto:raoalinawaz-cys@gmail.com" <i class='bx bx-envelope'></i></a>
+      <a href="https://github.com/raoalinawaz-cys" target="_blank"><i class="bx bxl-github"></i></a>
+      <a href="https://twitter.com/rootxran" target="_blank"><i class="bx bxl-twitter"></i></a>
+      <a href="https://www.linkedin.com/in/rao-ali-nawaz-907b6b239/" target="_blank"><i class="bx bxl-linkedin"></i></a>
+    </div>
+    <!--Footer Links-->
+    <div class="footer-links">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Use</a>
+      <a href="#">Disclaimer</a>
+    </div>
+    <!--Copyright-->
+    <p>&#169; RootxRAN</p>
+  </section>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
-    <script type="text/javascript">
-      (function(){
+  <script type="text/javascript">
+    (function () {
       emailjs.init('uV83-aeDs4PV_-k7x');
-      })();
-    </script>  
-    <!--Link to Js File-->
-    <script src="js\index.js"></script>
-  </body>
+    })();
+  </script>
+  <!--Link to Js File-->
+  <script src="js\index.js"></script>
+</body>
+
 </html>

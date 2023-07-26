@@ -251,6 +251,16 @@
       </div>
       <script src="js\circle-progress.js"></script>
     </div>
+    <div class="skills-icons">
+      <h3>TECH STACK</h3>
+      <img src="https://skillicons.dev/icons?i=c,cpp,python,java,php,bash,powershell,neovim,vim,visualstudio,vscode,idea,linux,googlecloud,cloudflare,heroku,vercel,aws,qt,raspberrypi,html,css,ts,js,react,next,materialui,tailwindcss,bootstrap,wordpress,mysql,postgres,mongodb,redis,nodejs,spring,django,laravel,graphql,nginx,docker,kubernetes,flutter,kotlin&perline=14" />
+    </div>
+    <div class="htb-block">
+      <h3>HACKTHEBOX</h3>
+      <a id="htb-badge" href="https://app.hackthebox.com/profile/1420781" target="_blank">
+        <script src="https://www.hackthebox.eu/badge/1420781"></script>
+      </a>
+    </div>
   </section>
   <!--Education Section-->
   <section class="education container" id="education">
@@ -376,7 +386,8 @@
     <!--Contact Form-->
     <form action="" class="contact-form" id="contact-form" style="height: 350px;">
       <input type="text" placeholder="Your Name" class="fromname" required>
-      <input type="email" name="" id="" placeholder="Email address..." class="email" required>
+      <input type="email" placeholder="Email address..." class="email" required>
+      <span id="emailvaliderror">! Please Enter Valid Email Address</span>
       <textarea name="" id="" cols="30" row="10" placeholder="Write message here..." class="message"
         required></textarea>
       <input type="submit" value="Send" class="send-btn">
@@ -408,7 +419,7 @@
     })();
   </script>
   <!--Link to Js File-->
-  <script src="js\index.js"></script>
+  <script src="js\index.js" defer></script>
 </body>
 
 </html>

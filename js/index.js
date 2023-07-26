@@ -9,14 +9,28 @@ function validate() {
   let email = document.querySelector(".email");
   let msg = document.querySelector(".message");
   let sendBtn = document.querySelector(".send-btn");
+  let text = document.getElementById("emailvaliderror")
+  let pattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
 
   sendBtn.addEventListener("click", (e) => {
     e.preventDefault();
     if (name.value == "" || email.value == "" || msg.value == "") {
       emptyerror();
-    } else {
-      sendmail(name.value, email.value, msg.value);
-      success();
+    } 
+    else {
+      if(pattern.test(email.value))
+      {
+        text.style.display = 'none';
+        sendmail(name.value, email.value, msg.value);
+        success();
+        name.value = "";
+        email.value = "";
+        msg.value = "";
+      }
+      else
+      {
+        text.style.display = 'block';
+      }
     }
   });
 }
@@ -52,3 +66,14 @@ let header = document.querySelector("header");
 window.addEventListener("scroll", () => {
   header.classList.toggle("header-active", window.scrollY > 0);
 });
+
+function changeHtbBadgeStyle() {
+  setTimeout(() => {
+    let element1 = document.getElementById("htb-badge");
+    console.log(element1)
+    let element2 = element1.nextElementSibling;
+    element2.style.margin = 'auto';
+    console.log(element2)
+  }, 2000);
+}
+changeHtbBadgeStyle()

@@ -70,10 +70,8 @@ window.addEventListener("scroll", () => {
 function changeHtbBadgeStyle() {
   setTimeout(() => {
     let element1 = document.getElementById("htb-badge");
-    console.log(element1)
     let element2 = element1.nextElementSibling;
     element2.style.margin = 'auto';
-    console.log(element2)
   }, 2000);
 }
 changeHtbBadgeStyle()
